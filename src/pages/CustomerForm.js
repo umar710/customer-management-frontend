@@ -36,7 +36,7 @@ const CustomerForm = () => {
     email: "",
     phone: "",
   });
-  const [errors, setErrors] = useState({});
+  //const [errors, setErrors] = useState({});
   const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   useEffect(() => {

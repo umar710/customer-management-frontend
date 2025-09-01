@@ -39,11 +39,18 @@ const CustomerDetail = () => {
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
   const [addressToDelete, setAddressToDelete] = useState(null);
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (id) {
       fetchCustomer(id);
     }
   }, [id]);
+  */
+
+  useEffect(() => {
+    if (id) {
+      fetchCustomer(id);
+    }
+  }, [id, fetchCustomer]);
 
   const handleAddAddress = () => {
     setEditingAddress(null);

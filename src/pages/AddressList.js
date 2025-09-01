@@ -36,7 +36,7 @@ const AddressList = () => {
     filters,
     fetchAddresses,
     deleteAddress,
-    setFilters,
+    //setFilters,
     clearFilters,
     setPage,
   } = useAddress();
@@ -46,9 +46,14 @@ const AddressList = () => {
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false);
   const [addressToDelete, setAddressToDelete] = useState(null);
 
-  useEffect(() => {
+  /*useEffect(() => {
     fetchAddresses();
   }, [filters, pagination.page]);
+  */
+
+  useEffect(() => {
+    fetchAddresses();
+  }, [fetchAddresses, filters, pagination.page]);
 
   const handleAddAddress = () => {
     setEditingAddress(null);
