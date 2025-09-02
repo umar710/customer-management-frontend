@@ -28,7 +28,7 @@ const Navigation = () => {
 
   const menuItems = [
     { text: "Customers", path: "/customers" },
-    { text: "Addresses", path: "/addresses" },
+    //{ text: "Addresses", path: "/addresses" },
   ];
 
   const drawer = (
